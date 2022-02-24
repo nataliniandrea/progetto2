@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Davide Vecchio</title>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Script -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-content reveal">
+        <h3 class="hero-title">Davide Vecchio</h3>
+      </div>
+      <div class="hero-content reveal">
+        <h1>
+          Special <br />
+          Systems <br />
+          Engineer
+        </h1>
+        <a href="#bg-cover" class="button">About me</a>
+      </div>
+      <video autoplay muted loop id="video-back">
+        <source src="img/video-back.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- BG cover -->
+    <div class="bg-cover1" id="bg-cover">
+      <div class="bg-cover1__title reveal">
+        <h1>
+          Work <br />
+          Experience
+        </h1>
+      </div>
+      <div class="bg-cover1__text reveal">
+        <h3>Lorem ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          omnis at aliquid eaque delectus? Reiciendis pariatur quaerat
+          cupiditate error fugit adipisci quam est deleniti sapiente
+          reprehenderit quasi sequi, molestiae vel! Neque beatae voluptate eius
+          voluptatem asperiores cupiditate natus a recusandae, ab repellendus
+          aliquid, harum eligendi aliquam voluptas nobis vero magnam. Harum sed
+          officia, culpa quis veniam omnis ab vero esse.
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-cover2" id="bg-cover">
+      <div class="bg-cover2__title reveal">
+        <h1>
+          Skills & <br />
+          Certifications
+        </h1>
+      </div>
+      <div class="bg-cover2__text reveal">
+        <h3>Lorem ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          omnis at aliquid eaque delectus? Reiciendis pariatur quaerat
+          cupiditate error fugit adipisci quam est deleniti sapiente
+          reprehenderit quasi sequi, molestiae vel! Neque beatae voluptate eius
+          voluptatem asperiores cupiditate natus a recusandae, ab repellendus
+          aliquid, harum eligendi aliquam voluptas nobis vero magnam. Harum sed
+          officia, culpa quis veniam omnis ab vero esse.
+        </p>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+
+    <div class="bg-cover3" id="bg-cover">
+      <div class="bg-cover3__title reveal">
+        <h1>Hobby & Interests</h1>
+      </div>
+      <div class="container reveal">
+        <div class="carousel">
+          <div id="pallino1" class="item"></div>
+          <div id="pallino2" class="item"></div>
+          <div id="pallino3" class="item"></div>
+          <div id="pallino4" class="item"></div>
+          <div id="pallino5" class="item"></div>
+          <div id="pallino6" class="item"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container reveal">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Contacts</h4>
+            <ul>
+              <li>Davide Vecchio</li>
+              <li>Via Don Pietro Patelli, 18</li>
+              <li>
+                <a href="mailto:vecchio.davide17@gmail.com"
+                  >vecchio.davide17@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Social</h4>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/davidevecchio17/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Resume</h4>
+            <div class="social">
+              <a href="file/davidevecchio.pdf" download
+                ><i class="fa-solid fa-file"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        /* Open Panel */
+        $(".hamburger").on("click", function () {
+          $(".menu").toggleClass("menu--open");
+        });
+      });
+
+      ScrollReveal().reveal(".reveal", {
+        distance: "100px",
+        duration: 1500,
+        easing: "cubic-bezier(.215, .61, .355, 1)",
+        interval: 600,
+      });
+    </script>
+  </body>
+</html>
